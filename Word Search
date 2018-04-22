@@ -43,3 +43,26 @@ int main(){
 		for(int x=1;x<=jml;x++){
 			cout<<" Kata "<<x<<" yang akan dicari : "; cin>>data;
 			ck = strlen(data);								// banyak karakter yang dicari
+					
+		cout<<endl;
+		
+		for (int b=0; b<15; b++){							// baris
+			for (int k=0; k<15; k++){						// kolom
+				if (data[0] == word[b][k]){
+					
+					// KANAN   KANAN   KANAN   KANAN   KANAN   KANAN   KANAN   KANAN   KANAN   KANAN   KANAN    
+					for (int p=0; p<ck; p++){
+						if (data[p] == word[b][k+p]){		// rumus chek ke kanan
+						save=p;
+						}
+						else{
+							break;
+						}
+					}
+					if (save == ck-1){
+						ada +=1;
+					}
+					else{
+						ada +=0;
+					}
+					
