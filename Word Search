@@ -180,3 +180,11 @@ int main(){
 				}
 			}
 		}	
+	
+					if(ada>0){
+						cout<<" ADA "<<endl<<endl; 
+					}
+						else{
+							cout<<" TIDAK ADA "<<endl<<endl;
+						}
+	}
