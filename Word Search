@@ -26,3 +26,20 @@ int main(){
 						{'o','h','n','k','z','w','a','t','e','r','j','g','t','r','a'}};
 
 				cout<<endl<<endl;
+
+
+	for (int b=0; b<=14; b++){
+		for (int k=0; k<=14; k++){
+			cout<<" | "<<word[b][k];
+		}
+		cout<<endl;
+	}
+		
+		char tekan;
+		label:
+		cout<<endl<<" Masukkan jumlah kata yang akan anda cari dari tabel = ";
+		cin>>jml;
+		
+		for(int x=1;x<=jml;x++){
+			cout<<" Kata "<<x<<" yang akan dicari : "; cin>>data;
+			ck = strlen(data);								// banyak karakter yang dicari
