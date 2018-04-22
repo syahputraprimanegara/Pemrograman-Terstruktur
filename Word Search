@@ -129,4 +129,20 @@ int main(){
 					else{
 						ada +=0;
 					}
-					
+						
+					// DIAGONAL KIRI ATAS   DIAGONAL KIRI ATAS   DIAGONAL KIRI ATAS   DIAGONAL KIRI ATAS 
+					for (int p=0; p<ck; p++){
+						if (data[p] == word[b-p][k-p]){			// rumus chek ke Diagonal Kiri Atas
+							save=p;
+						}
+						else{
+							break;
+						}
+					}
+					if (save == ck-1){
+						ada +=1;
+					}
+					else{
+						ada +=0;
+					}
+				
