@@ -162,3 +162,21 @@ int main(){
 						ada +=0;
 					}
 					
+					// DIAGONAL KIRI BAWAH   DIAGONAL KIRI BAWAH   DIAGONAL KIRI BAWAH   DIAGONAL KIRI BAWAH   
+					for (int p=0; p<ck; p++){
+						if (data[p] == word[b+p][k-p]){			// rumus chek ke Diagonal Kiri Bawah
+							save=p;
+						}
+						else{
+							break;
+						}
+					}
+					if (save == ck-1){
+						ada +=1;
+					}
+					else{
+						ada +=0;
+					}
+				}
+			}
+		}	
