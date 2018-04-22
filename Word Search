@@ -188,3 +188,10 @@ int main(){
 							cout<<" TIDAK ADA "<<endl<<endl;
 						}
 	}
+cout<<"=====PROGRAM SELESAI====="<<endl;
+	cout<<" Cari Kata Lagi..? (Y/T) "; cin>>tekan;
+		while (tekan == 'Y' || tekan == 'y')
+		goto label;		
+
+	return 0;
+}
