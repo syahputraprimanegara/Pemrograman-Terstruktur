@@ -66,9 +66,25 @@ int main(){
 						ada +=0;
 					}
 					
-					// KIRI    KIRI    KIRI    KIRI    KIRI    KIRI    KIRI      
+					// KIRI    KIRI    KIRI    KIRI    KIRI    KIRI    KIRI    KIRI    KIRI    KIRI    KIRI      
 					for (int p=0; p<ck; p++){
 						if (data[p] == word[b][k-p]){		// rumus chek ke kiri
+							save=p;
+						}
+						else{
+							break;
+						}
+					}
+					if (save == ck-1){
+						ada +=1;
+					}
+					else{
+						ada +=0;
+					}
+					
+					// ATAS    ATAS    ATAS    ATAS    ATAS    ATAS    ATAS    ATAS    ATAS    ATAS    ATAS     
+					for (int p=0; p<ck; p++){
+						if (data[p] == word[b-p][k]){			// rumus chek ke atas
 							save=p;
 						}
 						else{
