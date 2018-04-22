@@ -98,3 +98,19 @@ int main(){
 						ada +=0;
 					}
 					
+					// BAWAH   BAWAH   BAWAH   BAWAH   BAWAH   BAWAH   BAWAH   BAWAH   BAWAH   BAWAH   BAWAH
+					for (int p=0; p<ck; p++){
+						if (data[p] == word[b+p][k]){			// rumus chek ke bawah
+							save=p;
+						}
+						else{
+							break;
+						}
+					}
+					if (save == ck-1){
+						ada +=1;
+					}
+					else{
+						ada +=0;
+					}
+					
